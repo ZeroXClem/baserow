@@ -5633,10 +5633,22 @@ miller-rabin@^4.0.0:
     bn.js "^4.0.0"
     brorand "^1.0.1"
 
+mime-db@1.51.0:
+  version "1.51.0"
+  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.51.0.tgz#d9ff62451859b18342d960850dc3cfb77e63fb0c"
+  integrity sha512-5y8A56jg7XVQx2mbv1lu49NR4dokRnhZYTtL+KGfaa27uq4pSTXkwQkFJl4pkRMyNFz/EtYDSkiiEHx3F7UN6g==
+
 mime-db@1.52.0:
   version "1.52.0"
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.52.0.tgz#bbabcdc02859f4987301c856e3387ce5ec43bf70"
   integrity sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==
+
+mime-types@2.1.34:
+  version "2.1.34"
+  resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.34.tgz#5a712f9ec1503511a945803640fafe09d3793c24"
+  integrity sha512-6cP692WwGIs9XXdOO4++N+7qjqv0rqxxVvJ3VHPh/Sc9mVZcQP+ZGhkKiTvWMQRr2tbHkJP/Yn7Y0npb3ZBs4A==
+  dependencies:
+    mime-db "1.51.0"
 
 mime-types@^2.1.12, mime-types@~2.1.19:
   version "2.1.35"
@@ -5885,11 +5897,6 @@ node-emoji@^1.10.0:
   integrity sha512-wo2DpQkQp7Sjm2A0cq+sN7EHKO6Sl0ctXeBdFZrL9T9+UywORbufTcTZxom8YqpLQt/FqNMUkOpkZrJVYSKD3A==
   dependencies:
     lodash "^4.17.21"
-
-node-fetch@2.6.1:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
-  integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
 
 node-fetch@2.6.7, node-fetch@^2.6.7:
   version "2.6.7"
@@ -8481,10 +8488,10 @@ zapier-platform-cli@^12.0.3:
     yeoman-environment "3.3.0"
     yeoman-generator "5.2.0"
 
-zapier-platform-core@11.1.1:
-  version "11.1.1"
-  resolved "https://registry.yarnpkg.com/zapier-platform-core/-/zapier-platform-core-11.1.1.tgz#f61d2c5f845f4577425aef75db6584183350aa9f"
-  integrity sha512-2A5+JEI2joefi5bEOFb26HxTjFHZAxuyqnF0u985V6KczJimTJ97rqPQ2FdkIrGvynO7JsrAhndSP+WVP38V6Q==
+zapier-platform-core@11.3.3:
+  version "11.3.3"
+  resolved "https://registry.yarnpkg.com/zapier-platform-core/-/zapier-platform-core-11.3.3.tgz#8d6e53d8319026647615f7940da511c999b4047f"
+  integrity sha512-XGwg5mUlrvocSZf1WYR+dL6LEEdP8f5IIxHRp1Kl1T1HXdTG0tHlnVXdGBd2EFt1a279ivtFSH0K6ysfXMWU1g==
   dependencies:
     "@zapier/secret-scrubber" "^1.0.3"
     bluebird "3.7.2"
@@ -8492,17 +8499,18 @@ zapier-platform-core@11.1.1:
     dotenv "9.0.2"
     form-data "4.0.0"
     lodash "4.17.21"
-    node-fetch "2.6.1"
+    mime-types "2.1.34"
+    node-fetch "2.6.7"
     oauth-sign "0.9.0"
     semver "7.3.5"
-    zapier-platform-schema "11.1.1"
+    zapier-platform-schema "11.3.3"
   optionalDependencies:
     "@types/node" "^14.14.35"
 
-zapier-platform-schema@11.1.1:
-  version "11.1.1"
-  resolved "https://registry.yarnpkg.com/zapier-platform-schema/-/zapier-platform-schema-11.1.1.tgz#48ad2fc1e42ac2e2936c574b00250a00cdfe53fa"
-  integrity sha512-98zR9knoz0tKv6OeEr2vK8Lh93LDoSMDFWoVcHcBZaFkvJ5f+TM4T4atfmTlV/rRaene8RY4m359qgh/nPwabA==
+zapier-platform-schema@11.3.3:
+  version "11.3.3"
+  resolved "https://registry.yarnpkg.com/zapier-platform-schema/-/zapier-platform-schema-11.3.3.tgz#24afbfdf32c49dcd3daee4b1f5007e18acd5bfec"
+  integrity sha512-L07b807uxLJqdA7akgOVD/t5lD18jv7io8OTmu5K4am+W2pYsLkxhu1pvjwwSn+2sGDJZusuQrLjLL0VLTha5w==
   dependencies:
     jsonschema "1.2.2"
     lodash "4.17.21"
